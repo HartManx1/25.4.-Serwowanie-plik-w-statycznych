@@ -4,7 +4,7 @@ var app = express();
 app.use(express.static('assets'));
 
 app.get('/', function (req, res) {
-    res.sendFile('/index.html');
+    res.sendFile('assets/index.html');
 });
 
 var server = app.listen(3000, 'localhost', function() {
